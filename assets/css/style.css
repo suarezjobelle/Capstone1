@@ -12,7 +12,7 @@ font-family: 'Alegreya', serif;
 
 }
 .loginbody{
-background: url('../images/back8.jpg') center center no-repeat;
+background: url('../images/back8new.jpg') center center no-repeat;
 background-size: cover;
 height: 100%;
 }
@@ -101,7 +101,7 @@ height: 100%;
 .mainbody{
     background: url('../images/wallpaper.jpg') center center no-repeat;
 background-size: cover;
-height: 942px;
+height: 940px;
 
 }
 .maincontents{
@@ -121,4 +121,49 @@ height: 942px;
         font-family: Italic;
     }
 }
+
+footer {
+ position: fixed;
+ left: 0;
+ bottom: 0;
+ width: 100%;
+ background-color: black;
+ opacity: .50;
+ color: white;
+ text-align: center;
+}
+
+#icon{
+background-image:url(../images/email.png); 
+background-repeat: no-repeat; 
+background-position: 3px 5px;
+}
+#icon1{
+background-image:url(../images/padlock.png); 
+background-repeat: no-repeat; 
+background-position: 3px 5px;
+}
+#icon2{
+background-image:url(../images/job.png); 
+background-repeat: no-repeat; 
+background-position: 3px 5px;
+}
+#icon3{
+background-image:url(../images/name1.png); 
+background-repeat: no-repeat; 
+background-position: 3px 5px;
+}
+
+@media(max-width: 700px){
+
+    h1{
+       font-family: Italic;
+   }
+}
+
+.circ {
+      
+       border-radius: 12px;
+      
+   }
 
