@@ -44,7 +44,8 @@ height: 100%;
     
 }
 .card{
-    padding: 5px;
+
+    padding:20px;
     opacity: .85;
 }
 #navbar-toggle {
@@ -102,10 +103,14 @@ height: 100%;
   margin:auto;
 }
 .mainbody{
-    background: url('../images/wallpaper.jpg') center center no-repeat;
-background-size: cover;
-height: 940px;
+    background: url('../images/wallpaper.jpg');
+    height: 500px; 
 
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .maincontents{
     
