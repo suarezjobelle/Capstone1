@@ -83,7 +83,7 @@ a:focus {
 .mainbody{
     background: url('../images/wallpaper.jpg') center center no-repeat;
 background-size: cover;
-height: 930px;
+height: 1000px;
 
 }
 #dismiss:hover {
