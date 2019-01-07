@@ -137,38 +137,60 @@
 </div>
     </div>
         </nav>
+<div class="container">
 <div class="row">
-<div class="card cardevent" style="width: 18rem;height:30rem; ">
+  <div class="card cardevent" style="width: 18rem;height:30rem; ">
   <div class="card-header">
     Event List
   </div>
   <ul class="list-group list-group-flush">
+<li class="list-group-item">
+ <label class="container">Event 1
+  <input type="checkbox" checked="checked">
+  <span class="checkmark"></span>
+</label>
+</li>
     <li class="list-group-item">
-    <div class="input-group-prepend">
-    <div class="input-group-text">
-      <input type="checkbox" aria-label="Checkbox for following text input"></div>
-       <label>Lorem ipsum dolor sit amet.</label>
-  </div></li>
-    <li class="list-group-item">Dapibus ac facilisis in</li>
-    <li class="list-group-item">Vestibulum at eros</li>
+<label class="container">Event 2
+  <input type="checkbox" checked="checked">
+  <span class="checkmark"></span>
+</label>
+    </li>
+<li class="list-group-item">
+<label class="container">Event 3
+  <input type="checkbox" checked="checked">
+  <span class="checkmark"></span>
+</label>
+</li>
   </ul>
 </div> <!-- /card List-->
 <div class="card cardevent" style="width: 45rem;">
   <div class="card-header">
-    Event List
+   What to do
   </div>
   <ul class="list-group list-group-flush">
-    <li class="list-group-item"><div class="input-group-prepend">
-    <div class="input-group-text">
-      <input type="checkbox" aria-label="Checkbox for following text input">
-    </div>
-  </div></li>
-    <li class="list-group-item">Dapibus ac facilisis in</li>
-    <li class="list-group-item">Vestibulum at eros</li>
+<li class="list-group-item">
+<label class="container">To do 1
+  <input type="checkbox" checked="checked">
+  <span class="checkmark"></span>
+</label>
+</li>
+<li class="list-group-item">
+<label class="container">To do 2
+  <input type="checkbox" checked="checked">
+  <span class="checkmark"></span>
+</label>
+</li>
+    <li class="list-group-item">
+      <label class="container">To do 3
+  <input type="checkbox" checked="checked">
+  <span class="checkmark"></span>
+</label>
+    </li>
   </ul>
 </div> <!-- /card 2-->
-
-        </div><!-- /card group-->
+      </div><!-- /row -->
+          </div><!-- /container -->
                 </div> <!--/ page content -->
                         </div> <!-- /wrapper -->
                         
@@ -185,26 +207,7 @@
     <script src="assets/js/bootstrap.min.js"></script>
     <!-- jQuery Custom Scroller CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
-    <script>
-// Example starter JavaScript for disabling form submissions if there are invalid fields
-(function() {
-  'use strict';
-  window.addEventListener('load', function() {
-    // Fetch all the forms we want to apply custom Bootstrap validation styles to
-    var forms = document.getElementsByClassName('needs-validation');
-    // Loop over them and prevent submission
-    var validation = Array.prototype.filter.call(forms, function(form) {
-      form.addEventListener('submit', function(event) {
-        if (form.checkValidity() === false) {
-          event.preventDefault();
-          event.stopPropagation();
-        }
-        form.classList.add('was-validated');
-      }, false);
-    });
-  }, false);
-})();
-</script>
+  
 
 
 </html>
