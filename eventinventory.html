@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
     <!-- Icon -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
-
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
     <!-- Font Awesome JS -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" ></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"></script>
@@ -65,18 +65,18 @@
                     </a>
             </li>
             <li>
-                <a href="#">Buying<i class="fas fa-cart-plus menu-icon" aria-hidden="true"></i>
+                <a href="buying.html">Buying<i class="fas fa-cart-plus menu-icon" aria-hidden="true"></i>
                     </a>
             </li>
             <li>
-                <a href="#">Accounting<i class="  fas fa-folder-open menu-icon" aria-hidden="true"></i>
+                <a href="accounting.html">Accounting<i class="  fas fa-folder-open menu-icon" aria-hidden="true"></i>
                     </a>
             </li>
             <li>
-                <a href="#">Pricing<i class="fas fa-hand-holding-usd"></i></a>
+                <a href="pricing.html">Pricing<i class="fas fa-hand-holding-usd"></i></a>
             </li>
             <li>
-                <a href="#">Event Inventory<i class="fas fa-pen-square"></i>
+                <a href="eventinventory.html">Event Inventory<i class="fas fa-pen-square"></i>
                     </a>
             </li>
             <li>
@@ -138,7 +138,149 @@
     </div>
         </nav>
 <div class="container">
+    <div class="tabs outerlayer">
 
+      <input type="radio" name="tabs" id="tab1" checked >
+      <label for="tab1">
+      <i class="fas fa-cart-plus"></i><!-- <span>Add Products</span> -->
+      </label>
+
+      <input type="radio" name="tabs" id="tab2">
+      <label for="tab2">
+        <i class="fas fa-list-ul"></i>
+      </label>
+
+      <input type="radio" name="tabs" id="tab3">
+      <label for="tab3">
+          <i class="fas fa-people-carry"></i>
+      </label>
+
+      <div id="tab-content1" class="tab-content">
+         <form>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <b for="inputEmail4">Name of Event</b>
+      <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+    </div>
+    <div class="form-group col-md-6">
+      <b for="inputState">Type of Event</b>
+      <select id="inputState" class="form-control">
+        <option value="">--Type of Event</option>
+        <option value="Ticket">Wedding</option>
+        <option value="Headset">Birthday</option>
+        <option value="Mouse">Photoshoot</option>
+        <option value="Monitor">Seminar</option>
+      </select>
+    </div>
+  </div>
+   <div class="form-row">
+     <div class="form-group col-md-6">
+    <b for="inputAddress">Date</b>
+    <input type="date" class="form-control" id="inputAddress">
+  </div>
+    <div class="form-group col-md-6">
+       <b for="inputAddress2">Address</b>
+    <input type="text" class="form-control" id="inputAddress2" placeholder="Address">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="gridCheck">
+      <b class="form-check-label" for="gridCheck">
+        Advanced
+      </b>
+    </div>
+  </div>
+  <button type="submit" class="btn btn-primary">Add</button>
+</form>   
+      </div> <!-- #tab-content1 -->
+
+      <div id="tab-content2" class="tab-content">
+          <h3 style="text-align: center;">List of Events</h3>
+          <table class="tables table-responsive">
+   <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">First</th>
+      <th scope="col">Last</th>
+      <th scope="col">Handle</th>
+       <th scope="col">Edit</th>
+
+
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Larry</td>
+      <td>the Bird</td>
+      <td>@twitter</td>
+      <td>@mdo</td>
+
+    </tr>
+  </tbody>
+</table>
+      </div> <!-- #tab-content2 -->
+
+      <div id="tab-content3" class="tab-content">
+          
+<h3>Organized Events</h3>
+  <table class="tables table-responsive">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">First</th>
+      <th scope="col">Last</th>
+      <th scope="col">Handle</th>
+       <th scope="col">Edit</th>
+
+
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Larry</td>
+      <td>the Bird</td>
+      <td>@twitter</td>
+      <td>@mdo</td>
+
+    </tr>
+  </tbody>
+</table>
+
+
+      </div> <!-- #tab-content3 -->
+
+  </div> <!-- .tabs --> 
           </div><!-- /container -->
                 </div> <!--/ page content -->
                         </div> <!-- /wrapper -->

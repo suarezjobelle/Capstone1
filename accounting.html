@@ -33,6 +33,7 @@
             <div id="dismiss">
                 <i class="fas fa-arrow-left"></i>
             </div>
+
             <div class="sidebar-header">
                 <img src="assets/images/logo.png" width="180px" height="70px" >
             </div>
@@ -136,147 +137,47 @@
 </div>
     </div>
         </nav>
-
-<div class="hrcontainer ">
-  <div class="row ">
-      <div class="col-md-12">
-        <h2 style="color:white;text-align: center;">HR Management</h2><br>
-      </div>
+<div class="container">
+          <div class="tab_div">
+    <div class="tabs_menu">
+      <ul class="tabs">
+        <li id="tab1"> Tab 1 </li>
+        <li id="tab2"> Tab 2 </li>
+        <li id="tab3"> Tab 3 </li>
+        <li id="tab4"> Tab 4 </li>
+      </ul>
+      <!--     closing tabs menu div -->
     </div>
+    <div class="tab_content">
+      <div id="tab1_content">
+        <p> Tab 1 Content </p>
+        <!--       closes tab 1 content -->
+      </div>
+      
+      <div id="tab2_content">
+        <p> Tab 2 Content </p>
+        <!--       closes tab 2 content -->
+      </div>
 
+      <div id="tab3_content">
+        <p> Tab 3 Content </p>
+        <!--       closes tab 3 content -->
+      </div>
 
-    <div class="row outerlayer animated rubberBand">
-      <div class="col-md-6">
-        <div class="bordered">
+      <div id="tab4_content">
+        <p> Tab 4 Content </p>
+        <!--       closes tab 4 content -->
+      </div>
 
-          <div class="row">
-            <div class="col-md-12">
-              <h5 class="no-top">Add Employee</h5>
-            </div>
-          </div>
-
-        <div class="row">
-          <b>Employee Name</b>
-    <div class="input-group ">
-    <div class="input-group-prepend">
-    <span class="input-group-text" id="basic-addon1"><i class="fas fa-user"></i></span>
+      <!--     closing tab content div -->
+    </div>
+    <!--     closing tab div -->
   </div>
-  <input type="text" class="form-control" placeholder="Employee Name" aria-label="name" aria-describedby="basic-addon1">
-        </div>
-          </div>
-          <div class="row">
-            <b>Job Position</b>
-<div class="input-group ">
-  <div class="input-group-prepend">
-    <span class="input-group-text" id="basic-addon1"><i class="fas fa-suitcase"></i></span>
-  </div>
-  <select id="icon2" class="form-control" placeholder=" Job Position">
-<option value="" disabled selected hidden>Job Position</option>
-<option value="IT Department">IT Department</option>
-<option value="Accounting">Accounting</option>
-<option value="HR Department">HR Department</option>
-<option value="Video Production">Video Production</option>
-<option value="Marketing">Marketing</option>
-</select>
-        </div>
-          </div>
-
-          <div class="row">
-            <div class="col-md-6">
-              <b>Email</b>
-              <div class="input-group ">
-  <div class="input-group-prepend">
-    <span class="input-group-text" id="basic-addon1">@</span>
-  </div>
-  <input type="text" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="basic-addon1">
-            </div>
-            </div>
-            <div class="col-md-6"> 
-              <b>Password</b>
-              <div class="input-group mb-3">
-  <div class="input-group-prepend">
-    <span class="input-group-text" id="basic-addon1">*</span>
-  </div>
-  <input type="password" class="form-control" placeholder="Password" aria-label="password" aria-describedby="basic-addon1">
-            </div>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-md-6">
-              <button class="btn btn-info">Submit</button>
-            </div>
-          </div>
-
-        </div><!-- end bordered -->
-      </div><!-- end col-md-6 -->
-
-
-      <div class="col-md-6 mt-1">
-        <div class="bordered">
-
-          <div class="row">
-            <div class="col-md-12">
-              <h5 class="no-top">Complaints</h5>
-            </div>
-          </div>
-
-          <div class="row">
-<b>Company Name</b>
-<div class="input-group mb-4">
-  <div class="input-group-prepend">
-    <span class="input-group-text" id="basic-addon1"><i class="far fa-building"></i></span>
-  </div>
-  <input type="text" class="form-control" placeholder="Company Name" aria-label="Company Name" aria-describedby="basic-addon1">
-</div>
-<b>Employee Name</b>
-<div class="input-group mb-4">
-  <div class="input-group-prepend">
-    <span class="input-group-text" id="basic-addon1"><i class="fas fa-user"></i></span>
-  </div>
-  <input type="text" class="form-control" placeholder="Employee Name" aria-label="Employee Name" aria-describedby="basic-addon1">
-</div>
-         
-            <div class="col-md-6">
-              <b>Date of Complaint</b>
-               <div class="input-group">
-  <div class="input-group-prepend">
-    <span class="input-group-text" id="basic-addon1"><i class="far fa-calendar-alt"></i></span>
-  </div>
-  <input type="date" class="form-control" placeholder="Date of Compaint" aria-label="Date" aria-describedby="basic-addon1">
-            </div>
-            </div>
-            <div class="col-md-6"> 
-              <b>Supervisor's Name</b>
-               <div class="input-group ">
-  <div class="input-group-prepend">
-    <span class="input-group-text" id="basic-addon1"><i class="far fa-user-circle"></i></span>
-  </div>
-  <input type="text" class="form-control" placeholder="Supervisor's Name" aria-label="Supervisor's Name" aria-describedby="basic-addon1">
-            </div>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-md-12">
-              <div class="form-group">
-                <label for="">Compaints</label>
-                   <textarea class="form-control" style="min-width: 100%" rows="4"></textarea>
-
-              </div>
-            </div>
-          </div>
-             <div class="row">
-            <div class="col-md-6">
-              <button class="btn btn-info">Submit</button>
-            </div>
-          </div>
-        </div><!-- end bordered -->
-      </div><!-- end col-md-6 -->
-    </div><!-- end contacts row 1 -->
-              </div><!-- container -->
+          </div><!-- /container -->
                 </div> <!--/ page content -->
                         </div> <!-- /wrapper -->
+                        
+
     <div class="overlay"></div>
 </body>
     <!-- jQuery CDN - Slim version (=without AJAX) -->
@@ -289,26 +190,7 @@
     <script src="assets/js/bootstrap.min.js"></script>
     <!-- jQuery Custom Scroller CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
-    <script>
-// Example starter JavaScript for disabling form submissions if there are invalid fields
-(function() {
-  'use strict';
-  window.addEventListener('load', function() {
-    // Fetch all the forms we want to apply custom Bootstrap validation styles to
-    var forms = document.getElementsByClassName('needs-validation');
-    // Loop over them and prevent submission
-    var validation = Array.prototype.filter.call(forms, function(form) {
-      form.addEventListener('submit', function(event) {
-        if (form.checkValidity() === false) {
-          event.preventDefault();
-          event.stopPropagation();
-        }
-        form.classList.add('was-validated');
-      }, false);
-    });
-  }, false);
-})();
-</script>
+  
 
 
 </html>
