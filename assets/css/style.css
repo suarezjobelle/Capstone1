@@ -339,7 +339,7 @@ caption {
   padding: 2px;
   background: #333;
   color: #fff;
-  width: 20px;
+  width: 27px;
   border-radius: 50%;
   flex: 0 0 auto;
   align-self: flex-end;
@@ -1253,6 +1253,15 @@ table th{
   border-bottom: 1px solid #ddd;
 }
 
+<<<<<<< HEAD
+input.csr{
+  width: 50%;
+}
+table.csr{
+  width:100%;  
+}
+=======
 #myTable tr.header, #myTable tr:hover {
   background-color: #f1f1f1;
 }
+>>>>>>> 73dacf9d56d29ee7f5d46c98fc8e6352a5d2340f
