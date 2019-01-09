@@ -3,7 +3,6 @@
 margin: 0;
 padding: 0;
 }
-
 body,html{
 
 height: 100%;
@@ -25,7 +24,7 @@ height: 100%;
 
 .sidebar {
     color: #FFF;
-    background: #A6373F;
+    background:#5B1D24 /**/;
     width: 250px;
     max-width: 250px;
     float: left;
@@ -93,7 +92,14 @@ height: 100%;
     display: inline-block;
     width: 100%;
 }
-
+.mainbody{
+    background:linear-gradient(to bottom, rgba(150, 150, 163), rgba(91,0,5,1));
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100%; 
+}
 .container {
   width: 100%;
   padding: 0px 35px;
@@ -103,9 +109,14 @@ height: 100%;
   flex-direction: row;
   margin:auto;
 }
-.mainbody{
-    background: #ffffff;
-    height: 500px; 
+.task_container {
+   border: solid black;
+  border-width: 3 3px 3px 3;
+  width: auto;
+  text-align: left;
+  color: #3b3b3b;
+  font-weight: bold;
+  opacity: .80;
 
 }
 .maincontents{
@@ -313,7 +324,7 @@ caption {
 }
 
 #calendar td {
-  min-height: 180px;
+  min-height: 10px;
   display: flex;
   flex-direction: column;
 }
@@ -789,8 +800,7 @@ p {
 }
 
 a,
-a:hover,
-a:focus {
+a:hover{
     color: inherit;
     text-decoration: none;
     transition: all 0.3s;
@@ -847,7 +857,6 @@ a:focus {
     height: 35px;
     line-height: 35px;
     text-align: center;
-    background: #7386D5;
     position: absolute;
     top: 10px;
     right: 10px;
@@ -856,11 +865,7 @@ a:focus {
     -o-transition: all 0.3s;
     transition: all 0.3s;
 }
-.mainbody{
 
-    background-color: #ffffff;
-    height: 100%; 
-}
 #dismiss:hover {
     background: #fff;
     color: #7386D5;
@@ -1017,7 +1022,6 @@ table th{
 }
 
 /*-----Extra classes-----*/
-
 .marr20{
   margin-right: 20px;
 }
@@ -1082,6 +1086,7 @@ table th{
 }
 
 /*tabs*/
+
 .tabs {
   max-width: 90%;
   float: none;
@@ -1177,90 +1182,77 @@ table th{
     margin: 50px auto;
   }
 }
-
-/* vertical tab */
-
-.tab_div {
-  width: 100%;
-  transform: translateZ(0);
+.icon_nav{
+  font-size: 28px;
 }
 
-.tabs_menu {
-  /*   background-color:blue; */
-  padding-top: 1%;
-  width: 20%;
+/* vertical tab . . . . . .*/
+.tabnav {
   float: left;
-}
-
-ul.tabs {
-  padding: 0;
-}
-
-#tab1,
-#tab2,
-#tab3,
-#tab4 {
-  padding-top: 10%;
-  padding-bottom: 20%;
-  padding-left: 5%;
-  padding-right: 5%;
-  width: 100%;
-}
-
-ul.tabs li {
-  list-style-type: none;
-  font-family: Quicksand;
-  border-right: 2px solid white;
-  font-size: 18px;
-  color: white;
-  /*   transition: background-color 0.2s ease; */
-}
-
-
-/* ul.tabs li:hover {
-  border-right: 2px solid #e1386c;
-  background-color: rgba( 255, 155, 180, .9);
-  font-weight: bold;
-} */
-
-#tab1_content,
-#tab2_content,
-#tab3_content,
-#tab4_content {
-  
-  background-color:white;
-  width: 70%;
+  border: 1px solid #ccc;
+  background-color: #d1d1d1;
+  width: 25%;
   height: auto;
-  padding-top: 5%;
+  margin-top: 8px;
 }
-
-/* hover effect */
-
-ul.tabs li {
-  display: inline-block;
-  position: relative;
-  padding: 1em;
+.tabnav button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
   cursor: pointer;
-  background: #17171e;
-  color: white;
-  z-index: 0;
+  transition: 0.3s;
+  font-size: 17px;
+}
+.tabnav button:hover {
+  background-color: #D46A6A;
+}
+.tabnav button.active {
+  background-color: #D46A6A;
+}
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  border: 1px solid #ccc;
+  width: 70%;
+  border-left: none;
+  height: auto;
+  margin-top: 8px;
+  background-color: white;
+}
+  
+/* tab_customer_content*/
+#myInput {
+  background-image: url('../images/loupe.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
 }
 
-ul.tabs li:before {
-  content: " ";
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: #ff9bb4;
-  transform: scaleX(0);
-  transform-origin: 0 50%;
-  transition: transform .5s ease-out;
+#myTable {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 18px;
 }
 
-ul.tabs li:hover:before {
-  transform: scaleX(1);
+#myTable th, #myTable td {
+  text-align: left;
+  padding: 12px;
 }
 
+#myTable tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable tr:hover {
+  background-color: #f1f1f1;
+}

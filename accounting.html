@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <!-- Our Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
-   
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <!-- Scrollbar Custom CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
     <!-- Icon -->
@@ -46,7 +46,7 @@
                 <a href="upcomingevents.html">Upcoming Events<i class="fas fa-calendar-check"></i></a>
             </li>
             <li>
-                <a href="#">Task<i class="fas fa-tasks"></i></a>
+                <a href="task.html">Task<i class="fas fa-tasks"></i></a>
             </li>
             <li>
                 <a href="#">E-Management<i class="fas fa-briefcase"></i>
@@ -91,7 +91,7 @@
             <nav class="navbar navbar-expand-lg justify-content-end ">
                 <div class="container-fluid">
                     <a id="sidebarCollapse" class="btn btn-default">
-                       <img src="assets/images/round-toggle.png">
+                       <img src="assets/images/menu.png">
                     </a>
                     <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <i class="fas fa-align-justify"></i>
@@ -101,7 +101,7 @@
                        <ul class="navbar-nav navbar-nav ml-auto">
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-    <i class="fas fa-bell" style="font-size:20px;"></i> 
+    <i class="fas fa-bell icon_nav"></i> 
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="#">Action</a>
@@ -111,8 +111,8 @@
         </div>
       </li>
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <i class="fas fa-envelope" style="font-size:20px;"></i>
+        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <i class="fas fa-envelope icon_nav"></i>
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="#">Action</a>
@@ -136,9 +136,166 @@
     </ul>
 </div>
     </div>
-        </nav>
-<div class="container">
-         
+        </nav>  
+
+<div class="container-fluid">
+        <div class="w3-sidebar w3-bar-block mt-3" style="width:130px;height: 500px;">
+  <h5 class="w3-bar-item">Accounting</h5>
+  <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Customer')">Customer</button>
+  <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Vendors')">Vendors</button>
+  <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Employees')">Employees</button>
+  <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Transaction')">Transaction</button>
+  <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Reports')">Reports</button>  
+</div>
+
+<div style="margin-left:130px;" class="mt-3">
+  <div id="Customer" class="w3-container city w3-animate-opacity" style="display:none">
+<div class="card">
+<input type="text" id="myInput" style="width:10%;float: right;" onkeyup="myFunction()" placeholder="Search for names..">
+
+<table id="myTable table responsive"> 
+  <tr class="header">
+    <th style="width:60%;">Name</th>
+    <th style="width:40%;">Country</th>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Berglunds snabbkop</td>
+    <td>Sweden</td>
+  </tr>
+  <tr>
+    <td>Island Trading</td>
+    <td>UK</td>
+  </tr>
+  <tr>
+    <td>Koniglich Essen</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Laughing Bacchus Winecellars</td>
+    <td>Canada</td>
+  </tr>
+  <tr>
+    <td>Magazzini Alimentari Riuniti</td>
+    <td>Italy</td>
+  </tr>
+  <tr>
+    <td>North/South</td>
+    <td>UK</td>
+  </tr>
+  <tr>
+    <td>Paris specialites</td>
+    <td>France</td>
+  </tr>
+</table>
+</div>
+  </div>
+
+  <div id="Vendors" class="w3-container city w3-animate-opacity" style="display:none">
+    <h4>Vendors List</h4>
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+
+<table id="myTable table responsive">
+  <tr class="header">
+    <th style="width:60%;">Name</th>
+    <th style="width:40%;">Country</th>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Berglunds snabbkop</td>
+    <td>Sweden</td>
+  </tr>
+  <tr>
+    <td>Island Trading</td>
+    <td>UK</td>
+  </tr>
+  <tr>
+    <td>Koniglich Essen</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Laughing Bacchus Winecellars</td>
+    <td>Canada</td>
+  </tr>
+  <tr>
+    <td>Magazzini Alimentari Riuniti</td>
+    <td>Italy</td>
+  </tr>
+  <tr>
+    <td>North/South</td>
+    <td>UK</td>
+  </tr>
+  <tr>
+    <td>Paris specialites</td>
+    <td>France</td>
+  </tr>
+</table>
+  </div>
+
+  <div id="Employees" class="w3-container city w3-animate-opacity" style="display:none">
+    <h4>Employees List</h4>
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+
+<table id="myTable table responsive">
+  <tr class="header">
+    <th style="width:60%;">Name</th>
+    <th style="width:40%;">Department </th>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Berglunds snabbkop</td>
+    <td>Sweden</td>
+  </tr>
+  <tr>
+    <td>Island Trading</td>
+    <td>UK</td>
+  </tr>
+  <tr>
+    <td>Koniglich Essen</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Laughing Bacchus Winecellars</td>
+    <td>Canada</td>
+  </tr>
+  <tr>
+    <td>Magazzini Alimentari Riuniti</td>
+    <td>Italy</td>
+  </tr>
+  <tr>
+    <td>North/South</td>
+    <td>UK</td>
+  </tr>
+  <tr>
+    <td>Paris specialites</td>
+    <td>France</td>
+  </tr>
+</table>
+  </div>
+
+  <div id="Reports" class="w3-container city w3-animate-bottom" style="display:none">
+    <h2>Slide in from bottom</h2>
+    <p>Paris is the capital of France.</p> 
+    <p>The Paris area is one of the largest population centers in Europe, with more than 12 million inhabitants.</p>
+  </div>
+
+  <div id="Transaction" class="w3-container city w3-animate-zoom" style="display:none">
+    <h2>Zoom in</h2>
+    <p>Tokyo is the capital of Japan.</p>
+    <p>It is the center of the Greater Tokyo Area, and the most populous metropolitan area in the world.</p>
+  </div>
+
+</div>
+
           </div><!-- /container -->
                 </div> <!--/ page content -->
                         </div> <!-- /wrapper -->
