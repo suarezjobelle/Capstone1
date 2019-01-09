@@ -22,39 +22,37 @@
 // })
 
 //vertical nav
+  function openLink(evt, animName) {
+    var i, x, tablinks;
+    x = document.getElementsByClassName("city");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < x.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+    }
+    document.getElementById(animName).style.display = "block";
+    evt.currentTarget.className += " w3-red";
+  }
 
-$(document).ready(function() {
 
-  $("#tab1_content").hide();
-  $("#tab2_content").hide();
-  $("#tab3_content").hide();
-  $("#tab4_content").hide();
-
-  $("#tab1").click(function() {
-    $("#tab1_content").show();
-    $("#tab2_content").hide();
-    $("#tab3_content").hide();
-    $("#tab4_content").hide();
-  });
-
-  $("#tab2").click(function() {
-    $("#tab2_content").show();
-    $("#tab1_content").hide();
-    $("#tab3_content").hide();
-    $("#tab4_content").hide();
-  });
-
-  $("#tab3").click(function() {
-    $("#tab3_content").show();
-    $("#tab1_content").hide();
-    $("#tab2_content").hide();
-    $("#tab4_content").hide();
-  });
-
-  $("#tab4").click(function() {
-    $("#tab4_content").show();
-    $("#tab1_content").hide();
-    $("#tab2_content").hide();
-    $("#tab3_content").hide();
-  });
-});
+//table_filter
+function myFunction() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
